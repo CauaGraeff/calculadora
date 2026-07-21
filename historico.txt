@@ -1,0 +1,10 @@
+A soma entre os números 5.0 e 2.0 é: 7.0
+A soma entre os números 5.0 e 8.0 é: 13.0
+A subtração entre os números 5.0 e 3.0 é: 2.0
+A subtração entre os números 5.0 e 2.0 é: 3.0
+O produto entre os números 5.0 e 8.0 é: 40.0
+A divisão entre os números 5.0 e 2.0 é: 2.5
+A potência da base 0.0 na expoente de 0.0 é: 25.0
+A potência da base 5.0 na expoente de 2.0 é: 25.0
+A divisão entre os números 5.0 e 0.0 é: Infinity
+A divisão entre os números 5.0 e 2.0 é: 2.5
