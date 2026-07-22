@@ -21,7 +21,7 @@ public class ExecucaoSwitch {
         System.out.println("Digite o segundo número da soma: ");
         sum.setNumero2(sc.nextDouble());
 
-        double soma = sum.soma();
+        double soma = sum.operacao();
 
         String operacaoNova = "A soma entre os números " + sum.getNumero1() + " e " + sum.getNumero2() + " é: " + soma + System.lineSeparator();
         System.out.println(operacaoNova);
@@ -36,7 +36,7 @@ public class ExecucaoSwitch {
         System.out.println("Digite o segundo número da subtração: ");
         sub.setNumero2(sc.nextDouble());
 
-        double subtracao = sub.subtracao();
+        double subtracao = sub.operacao();
 
         String operacaoNova = "A subtração entre os números " + sub.getNumero1() + " e " + sub.getNumero2() + " é: " + subtracao + System.lineSeparator();
         System.out.println(operacaoNova);
@@ -51,7 +51,7 @@ public class ExecucaoSwitch {
         System.out.println("Digite o segundo número da multiplicação: ");
         mult.setNumero2(sc.nextDouble());
 
-        double multiplicacao = mult.multiplicao();
+        double multiplicacao = mult.operacao();
 
         String operacaoNova = "O produto entre os números " + mult.getNumero1() + " e " + mult.getNumero2() + " é: " + multiplicacao + System.lineSeparator();
         System.out.println(operacaoNova);
@@ -72,7 +72,7 @@ public class ExecucaoSwitch {
             div.setNumero2(sc.nextDouble());
         }
 
-        double divisao = div.divisao();
+        double divisao = div.operacao();
 
         String operacaoNova = "A divisão entre os números " + div.getNumero1() + " e " + div.getNumero2() + " é: " + divisao + System.lineSeparator();
         System.out.println(operacaoNova);
@@ -87,7 +87,7 @@ public class ExecucaoSwitch {
         System.out.println("Digite o expoente: ");
         poten.setNumero2(sc.nextDouble());
 
-        double potenciacao = poten.potencia();
+        double potenciacao = poten.operacao();
 
         String operacaoNova = "A potência da base " + poten.getNumero1() + " na expoente de " + poten.getNumero2() + " é: " + potenciacao + System.lineSeparator();
         System.out.println(operacaoNova);
