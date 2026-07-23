@@ -4,13 +4,12 @@ public class Numeros {
     private Double numero1;
     private Double numero2;
 
-    public void setNumero1(Double numero1) {
-        this.numero1 = numero1;
+    public void setNumero1(String numero1) {
+        this.numero1 = Double.parseDouble(numero1.replace(",", "."));
     }
 
-    public void setNumero2(Double numero2) {
-
-        this.numero2 = numero2;
+    public void setNumero2(String numero2) {
+        this.numero2 = Double.parseDouble(numero2.replace(",", "."));;
     }
 
     public double getNumero1() {

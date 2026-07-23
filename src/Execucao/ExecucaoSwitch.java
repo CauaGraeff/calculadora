@@ -15,26 +15,30 @@ public class ExecucaoSwitch {
     Scanner sc = new Scanner(System.in);
 
     public void blocoAdicao() throws IOException {
-        System.out.println("Digite o primeiro número da soma: ");
-        sum.setNumero1(Double.parseDouble(sc.nextLine().replace(",", ".")));
+        try {
+            System.out.println("Digite o primeiro número da soma: ");
+            sum.setNumero1(sc.nextLine());
+            System.out.println("Digite um valor válido!");
+            System.out.println("Digite o segundo número da soma: ");
+            sum.setNumero2(sc.nextLine());
 
-        System.out.println("Digite o segundo número da soma: ");
-        sum.setNumero2(Double.parseDouble(sc.nextLine().replace(",", ".")));
+            double soma = sum.operacao();
 
-        double soma = sum.operacao();
+            String operacaoNova = "A soma entre os números " + sum.getNumero1() + " e " + sum.getNumero2() + " é: " + soma + System.lineSeparator();
+            System.out.println(operacaoNova);
 
-        String operacaoNova = "A soma entre os números " + sum.getNumero1() + " e " + sum.getNumero2() + " é: " + soma + System.lineSeparator();
-        System.out.println(operacaoNova);
-
-        add.addLinha(operacaoNova);
+            add.addLinha(operacaoNova);
+        } catch (NumberFormatException e) {
+            System.out.println("Você não pode digitar um valor que não seja numérico!");
+        }
     }
-
     public void blocoSubtracao() throws IOException {
+        try {
         System.out.println("Digite o primeiro número da subtração: ");
-        sub.setNumero1(Double.parseDouble(sc.nextLine().replace(",", ".")));
+        sub.setNumero1(sc.nextLine());
 
         System.out.println("Digite o segundo número da subtração: ");
-        sub.setNumero2(Double.parseDouble(sc.nextLine().replace(",", ".")));
+        sub.setNumero2(sc.nextLine());
 
         double subtracao = sub.operacao();
 
@@ -42,14 +46,18 @@ public class ExecucaoSwitch {
         System.out.println(operacaoNova);
 
         add.addLinha(operacaoNova);
+        } catch (NumberFormatException e) {
+        System.out.println("Você não pode digitar um valor que não seja numérico!");
+    }
     }
 
     public void blocoMultiplicacao() throws IOException {
+        try {
         System.out.println("Digite o primeiro número da multiplicação: ");
-        mult.setNumero1(Double.parseDouble(sc.nextLine().replace(",", ".")));
+        mult.setNumero1(sc.nextLine());
 
         System.out.println("Digite o segundo número da multiplicação: ");
-        mult.setNumero2(Double.parseDouble(sc.nextLine().replace(",", ".")));
+        mult.setNumero2(sc.nextLine());
 
         double multiplicacao = mult.operacao();
 
@@ -57,19 +65,23 @@ public class ExecucaoSwitch {
         System.out.println(operacaoNova);
 
         add.addLinha(operacaoNova);
+        } catch (NumberFormatException e) {
+            System.out.println("Você não pode digitar um valor que não seja numérico!");
+        }
     }
 
     public void blocoDivisao() throws IOException {
+        try {
         System.out.println("Digite o número numerador: ");
-        div.setNumero1(Double.parseDouble(sc.nextLine().replace(",", ".")));
+        div.setNumero1(sc.nextLine());
 
         System.out.println("Digite o número denominador: ");
-        div.setNumero2(Double.parseDouble(sc.nextLine().replace(",", ".")));
+        div.setNumero2(sc.nextLine());
 
 
         while(div.getNumero2() == 0) {
             System.out.println("Digite um número denominador válido: ");
-            div.setNumero2(Double.parseDouble(sc.nextLine().replace(",", ".")));
+            div.setNumero2(sc.nextLine());
         }
 
         double divisao = div.operacao();
@@ -78,14 +90,18 @@ public class ExecucaoSwitch {
         System.out.println(operacaoNova);
 
         add.addLinha(operacaoNova);
+        } catch (NumberFormatException e) {
+            System.out.println("Você não pode digitar um valor que não seja numérico!");
+        }
     }
 
     public void blocoPotenciacao() throws IOException {
+        try {
         System.out.println("Digite a base");
-        poten.setNumero1(Double.parseDouble(sc.nextLine().replace(",", ".")));
+        poten.setNumero1(sc.nextLine());
 
         System.out.println("Digite o expoente: ");
-        poten.setNumero2(Double.parseDouble(sc.nextLine().replace(",", ".")));
+        poten.setNumero2(sc.nextLine());
 
         double potenciacao = poten.operacao();
 
@@ -93,6 +109,9 @@ public class ExecucaoSwitch {
         System.out.println(operacaoNova);
 
         add.addLinha(operacaoNova);
+        } catch (NumberFormatException e) {
+            System.out.println("Você não pode digitar um valor que não seja numérico!");
+        }
     }
 
 }

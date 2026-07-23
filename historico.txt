@@ -11,3 +11,14 @@ A divisão entre os números 5.0 e 2.0 é: 2.5
 A soma entre os números 5.0 e 5.0 é: 10.0
 A divisão entre os números 5.0 e 3.5 é: 1.4285714285714286
 A soma entre os números 5.0 e 5.0 é: 10.0
+A soma entre os números 5.2 e 5.2 é: 10.4
+A divisão entre os números 5.5 e 5.5 é: 1.0
+A potência da base 5.0 na expoente de 2.0 é: 25.0
+A subtração entre os números 8.0 e -8.0 é: 16.0
+A soma entre os números -8.0 e 8.0 é: 0.0
+A subtração entre os números -8.0 e 8.0 é: -16.0
+A soma entre os números 8.0 e -8.0 é: 0.0
+A subtração entre os números 8.0 e -8.0 é: 16.0
+A subtração entre os números 20.0 e 2.0 é: 18.0
+A divisão entre os números 10.0 e 2.0 é: 5.0
+A divisão entre os números 10.0 e 2.0 é: 5.0
