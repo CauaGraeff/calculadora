@@ -16,10 +16,10 @@ public class ExecucaoSwitch {
 
     public void blocoAdicao() throws IOException {
         System.out.println("Digite o primeiro número da soma: ");
-        sum.setNumero1(sc.nextDouble());
+        sum.setNumero1(Double.parseDouble(sc.nextLine().replace(",", ".")));
 
         System.out.println("Digite o segundo número da soma: ");
-        sum.setNumero2(sc.nextDouble());
+        sum.setNumero2(Double.parseDouble(sc.nextLine().replace(",", ".")));
 
         double soma = sum.soma();
 
@@ -31,10 +31,10 @@ public class ExecucaoSwitch {
 
     public void blocoSubtracao() throws IOException {
         System.out.println("Digite o primeiro número da subtração: ");
-        sub.setNumero1(sc.nextDouble());
+        sub.setNumero1(Double.parseDouble(sc.nextLine().replace(",", ".")));
 
         System.out.println("Digite o segundo número da subtração: ");
-        sub.setNumero2(sc.nextDouble());
+        sub.setNumero2(Double.parseDouble(sc.nextLine().replace(",", ".")));
 
         double subtracao = sub.subtracao();
 
@@ -46,10 +46,10 @@ public class ExecucaoSwitch {
 
     public void blocoMultiplicacao() throws IOException {
         System.out.println("Digite o primeiro número da multiplicação: ");
-        mult.setNumero1(sc.nextDouble());
+        mult.setNumero1(Double.parseDouble(sc.nextLine().replace(",", ".")));
 
         System.out.println("Digite o segundo número da multiplicação: ");
-        mult.setNumero2(sc.nextDouble());
+        mult.setNumero2(Double.parseDouble(sc.nextLine().replace(",", ".")));
 
         double multiplicacao = mult.multiplicao();
 
@@ -61,15 +61,15 @@ public class ExecucaoSwitch {
 
     public void blocoDivisao() throws IOException {
         System.out.println("Digite o número numerador: ");
-        div.setNumero1(sc.nextDouble());
+        div.setNumero1(Double.parseDouble(sc.nextLine().replace(",", ".")));
 
         System.out.println("Digite o número denominador: ");
-        div.setNumero2(sc.nextDouble());
+        div.setNumero2(Double.parseDouble(sc.nextLine().replace(",", ".")));
 
 
         while(div.getNumero2() == 0) {
             System.out.println("Digite um número denominador válido: ");
-            div.setNumero2(sc.nextDouble());
+            div.setNumero2(Double.parseDouble(sc.nextLine().replace(",", ".")));
         }
 
         double divisao = div.divisao();
@@ -82,10 +82,10 @@ public class ExecucaoSwitch {
 
     public void blocoPotenciacao() throws IOException {
         System.out.println("Digite a base");
-        poten.setNumero1(sc.nextDouble());
+        poten.setNumero1(Double.parseDouble(sc.nextLine().replace(",", ".")));
 
         System.out.println("Digite o expoente: ");
-        poten.setNumero2(sc.nextDouble());
+        poten.setNumero2(Double.parseDouble(sc.nextLine().replace(",", ".")));
 
         double potenciacao = poten.potencia();
 

@@ -8,3 +8,6 @@ A potência da base 0.0 na expoente de 0.0 é: 25.0
 A potência da base 5.0 na expoente de 2.0 é: 25.0
 A divisão entre os números 5.0 e 0.0 é: Infinity
 A divisão entre os números 5.0 e 2.0 é: 2.5
+A soma entre os números 5.0 e 5.0 é: 10.0
+A divisão entre os números 5.0 e 3.5 é: 1.4285714285714286
+A soma entre os números 5.0 e 5.0 é: 10.0
